@@ -76,7 +76,7 @@ function create() {
       ledge = platforms.create(600,350,'ground2');
     ledge.body.immovable = true;
     
-    ledge = platforms.create(500,600,'ground2');
+    ledge = platforms.create(50,100,'ground2');
     ledge.body.immovable =true;
 
     // The player and its settings
