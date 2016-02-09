@@ -22,7 +22,7 @@ function preload() {
     game.load.image('star', 'assets/smallPin.png');
     game.load.image('ground2', 'assets/airplane.png');
     game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
-    game.load.audio('boden', 'assets/deepchill.mp3');
+    game.load.audio('boden', 'assets/explosion.mp3');
 
 
 }
@@ -44,9 +44,7 @@ function create() {
     game.add.sprite(0, 0, 'sky');
 
     //music attributes:
-    music = game.add.audio('boden');
-    music.play();
-    
+  
     //  The platforms group contains the ground and the 2 ledges we can jump on
     platforms = game.add.group();
 
@@ -166,7 +164,8 @@ function collectStar (player, star) {
     
     // Removes the star from the screen
     star.kill();
-
+    music = game.add.audio('boden');
+    music.play();
     //  Add and update the score
     score += 15;
     scoreText.text = 'Countries Visited: ' + score;
