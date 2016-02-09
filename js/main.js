@@ -22,7 +22,7 @@ function preload() {
     game.load.image('star', 'assets/smallPin.png');
     game.load.image('ground2', 'assets/airplane.png');
     game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
-    game.load.audio('boden', 'assets/deepChill.mp3');
+    game.load.audio('boden', 'assets/bass.mp3');
 
 
 }
