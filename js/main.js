@@ -13,8 +13,6 @@ window.onload = function() {
     
     "use strict";
 
-//<script type="text/javascript">
-
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
 function preload() {
@@ -174,7 +172,4 @@ function collectStar (player, star) {
     scoreText.text = 'Countries Visited: ' + score;
 
 }
-
-//</script>
-
 };
