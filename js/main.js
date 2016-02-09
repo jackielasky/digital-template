@@ -19,12 +19,12 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create
 
 function preload() {
 
-    game.load.image('sky', 'assets/colormap2.png');
-    game.load.image('ground', 'assets/platform.png');
-    game.load.image('star', ' assets/images/apple.png');
-    game.load.image('ground2', 'assets/airplane.png');
-    game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
-    game.load.audio('boden', 'assets/deepChill.ogg');
+    game.load.image('sky', 'digital-template/assets/colormap2.png');
+    game.load.image('ground', 'digital-template/assets/platform.png');
+    game.load.image('star', 'digital-template/assets/smallPin.png');
+    game.load.image('ground2', 'digital-template/assets/airplane.png');
+    game.load.spritesheet('dude', 'digital-template/assets/dude.png', 32, 48);
+    game.load.audio('boden', 'digital-template/assets/deepChill.ogg');
 
 
 }
